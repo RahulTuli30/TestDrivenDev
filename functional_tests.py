@@ -2,8 +2,8 @@ from selenium import webdriver
 import os
 
 def testDjango():
-    #print(os.getcwd())
-    browser = webdriver.Chrome("./chromedriver")
+    print(os.getcwd())
+    browser = webdriver.Chrome("../chromedriver")
     browser.get("http://localhost:8000")
     assert 'Django' in browser.title, "Django not up and running!"
 
